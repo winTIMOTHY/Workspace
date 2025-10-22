@@ -1,0 +1,43 @@
+body{
+background-color: #0077B6;
+}
+h1{
+     font-family: "Press Start 2P", system-ui;
+     text-align: center;
+     padding: 10px;
+}
+
+p{
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    font-size: x-large;
+}
+img{
+    width: 100%;
+}
+nav{
+    text-align: center;
+}
+nav a{
+    background-color: #48CAE4;
+    border: 10px solid #48CAE4;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: "Outfit", sans-serif;
+}
+#button{
+  background-color:#48CAE4;
+  border-radius:5px;
+  text-align: center;
+  display: block; 
+  margin: 50px auto;
+  border: dashed blue;
+}
+h4{
+  text-align:center;
+  font-family: "Outfit", sans-serif;
+}
+a{
+  text-align:center;
+;
+}
