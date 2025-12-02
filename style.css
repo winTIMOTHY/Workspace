@@ -1,6 +1,7 @@
 body{
 background-color: #0077B6;
 }
+
 h1{
      font-family: "Press Start 2P", system-ui;
      text-align: center;
@@ -12,32 +13,86 @@ p{
     text-align: center;
     font-size: x-large;
 }
+
 img{
     width: 100%;
 }
+
 nav{
     text-align: center;
+    margin: 20px;
 }
+
 nav a{
     background-color: #48CAE4;
     border: 10px solid #48CAE4;
     border-radius: 20px;
-    margin: 10px;
+   
     font-family: "Outfit", sans-serif;
 }
-#button{
-  background-color:#48CAE4;
-  border-radius:5px;
-  text-align: center;
-  display: block; 
-  margin: 50px auto;
-  border: dashed blue;
+
+#boatdiv{
+    text-align: center;
 }
+
 h4{
-  text-align:center;
-  font-family: "Outfit", sans-serif;
+    text-align: center;
 }
+
 a{
-  text-align:center;
-;
+    text-align: center;
+    
 }
+figcaption{
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+
+/* layout for the boat images: control space between cells with border-spacing */
+.image-table {
+    border-collapse: separate; /* allow border-spacing to take effect */
+    border-spacing: 10px; /* change this value to increase/decrease space between images */
+    margin: 0 auto; /* center the table */
+}
+
+.image-table .img-cell {
+    vertical-align: top;
+    width: 50%;
+}
+
+/* make images fill their cells and override earlier fixed id widths */
+#boat1, #boat2, #boat3, #boat4, #boat5 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-table .img-cell img + img {
+    margin-top: 12px; /* space between images when stacked in same cell */
+}
+
+@media (max-width: 600px) {
+    .image-table { border-spacing: 12px; }
+    .image-table .img-cell { width: 100%; }
+}
+#boat3 {
+    width : 100%;
+}
+
+/* Make both image tables smaller overall */
+.image-table {
+    width: 80%;
+    max-width: 700px; /* overall maximum width of the table */
+    border-spacing: 8px; /* slightly tighter spacing */
+    margin: 0 auto; /* ensure centered */
+}
+.image-table .img-cell {
+    width: 48%; /* two cells per row with small gap */
+}
+
+@media (max-width: 600px) {
+    .image-table { width: 95%; max-width: none; border-spacing: 10px; }
+    .image-table .img-cell { width: 100%; }
+}
+
